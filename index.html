@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onkar Kulkarni | Lead Generation & Growth Marketing Consultant</title>
+
+  <meta name="description" content="Performance Marketing Consultant helping businesses generate qualified leads using Google Ads, Meta Ads, CRM automation, and conversion-focused growth systems.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#020617;
+      color:#ffffff;
+      overflow-x:hidden;
+      line-height:1.7;
+      background-image:
+      radial-gradient(circle at 10% 20%, rgba(59,130,246,0.15), transparent 25%),
+      radial-gradient(circle at 90% 10%, rgba(168,85,247,0.12), transparent 30%),
+      radial-gradient(circle at 50% 90%, rgba(14,165,233,0.10), transparent 30%);
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    img{
+      width:100%;
+      display:block;
+    }
+
+    .container{
+      width:90%;
+      max-width:1240px;
+      margin:auto;
+    }
+
+    section{
+      padding:100px 0;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes floatCard {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:999;
+      background:rgba(2,6,23,0.82);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-wrapper{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 0;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:900;
+      background:linear-gradient(135deg,#60a5fa,#22d3ee,#a855f7);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:26px;
+      align-items:center;
+    }
+
+    .nav-links a{
+      color:#dbeafe;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#60a5fa;
+    }
+
+    .mobile-btn{
+      display:none;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      padding-top:120px;
+    }
+
+    .hero-wrapper{
+      display:grid;
+      grid-template-columns:1.1fr 0.9fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 20px;
+      border-radius:50px;
+      border:1px solid rgba(96,165,250,0.25);
+      background:rgba(96,165,250,0.08);
+      color:#93c5fd;
+      margin-bottom:28px;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .hero h1{
+      font-size:68px;
+      line-height:1.05;
+      margin-bottom:24px;
+      font-weight:900;
+      letter-spacing:-2px;
+    }
+
+    .hero h1 span{
+      background:linear-gradient(135deg,#60a5fa,#22d3ee,#a855f7);
+      background-size:200% 200%;
+      animation:gradientShift 6s ease infinite;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      color:#cbd5e1;
+      font-size:19px;
+      max-width:650px;
+      margin-bottom:35px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px 30px;
+      border-radius:16px;
+      font-weight:700;
+      transition:0.35s;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,#3b82f6,#2563eb,#06b6d4);
+      background-size:200% 200%;
+      animation:gradientShift 5s ease infinite;
+      color:#fff;
+      box-shadow:0 20px 40px rgba(37,99,235,0.35);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-4px);
+      box-shadow:0 28px 50px rgba(37,99,235,0.45);
+    }
+
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,0.12);
+      background:rgba(255,255,255,0.04);
+      color:#fff;
+    }
+
+    .hero-proof{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .proof-chip{
+      padding:12px 18px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      color:#cbd5e1;
+      font-size:14px;
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-card{
+      position:relative;
+      background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:30px;
+      padding:40px;
+      backdrop-filter:blur(14px);
+      box-shadow:0 30px 80px rgba(0,0,0,0.35);
+      overflow:hidden;
+    }
+
+    .hero-card::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(96,165,250,0.12), transparent 50%);
+      pointer-events:none;
+    }
+
+    .hero-card h3{
+      font-size:28px;
+      margin-bottom:20px;
+    }
+
+    .hero-list{
+      list-style:none;
+      margin-bottom:30px;
+    }
+
+    .hero-list li{
+      margin-bottom:14px;
+      color:#dbeafe;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:24px;
+      margin-top:-70px;
+      position:relative;
+      z-index:5;
+    }
+
+    .stat-box{
+      background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:24px;
+      padding:34px;
+      text-align:center;
+      backdrop-filter:blur(16px);
+      animation:floatCard 5s ease-in-out infinite;
+      box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .stat-box h2{
+      font-size:46px;
+      margin-bottom:10px;
+      font-weight:900;
+      background:linear-gradient(135deg,#60a5fa,#22d3ee);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .stat-box p{
+      color:#cbd5e1;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      font-size:52px;
+      font-weight:900;
+      margin-bottom:18px;
+      letter-spacing:-1px;
+    }
+
+    .section-title p{
+      color:#94a3b8;
+      max-width:760px;
+      margin:auto;
+    }
+
+    .logo-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:24px;
+      align-items:center;
+    }
+
+    .logo-card{
+      background:#fff;
+      border-radius:20px;
+      padding:25px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:140px;
+      transition:0.35s;
+    }
+
+    .logo-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .logo-card img{
+      max-height:90px;
+      object-fit:contain;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:26px;
+    }
+
+    .card{
+      position:relative;
+      overflow:hidden;
+      background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:26px;
+      padding:36px;
+      backdrop-filter:blur(14px);
+      transition:0.35s;
+      box-shadow:0 20px 50px rgba(0,0,0,0.28);
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      border-color:rgba(96,165,250,0.35);
+    }
+
+    .card h3{
+      font-size:24px;
+      margin-bottom:16px;
+      color:#60a5fa;
+    }
+
+    .card p{
+      color:#cbd5e1;
+    }
+
+    .results-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:26px;
+    }
+
+    .result-card{
+      background:linear-gradient(135deg, rgba(59,130,246,0.15), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:28px;
+      padding:40px;
+    }
+
+    .result-number{
+      font-size:56px;
+      font-weight:900;
+      margin-bottom:12px;
+      background:linear-gradient(135deg,#60a5fa,#22d3ee,#a855f7);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .testimonial-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:26px;
+    }
+
+    .testimonial-card{
+      background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:28px;
+      padding:38px;
+      position:relative;
+    }
+
+    .testimonial-card::before{
+      content:'“';
+      position:absolute;
+      top:10px;
+      left:24px;
+      font-size:90px;
+      color:rgba(96,165,250,0.15);
+      font-weight:900;
+    }
+
+    .testimonial-card p{
+      color:#dbeafe;
+      margin-bottom:24px;
+      position:relative;
+      z-index:2;
+    }
+
+    .client-name{
+      font-weight:800;
+      font-size:18px;
+    }
+
+    .client-company{
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    .offer-section{
+      background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(168,85,247,0.08));
+      border-top:1px solid rgba(255,255,255,0.08);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .offer-box{
+      text-align:center;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .offer-box h2{
+      font-size:54px;
+      margin-bottom:20px;
+      font-weight:900;
+    }
+
+    .offer-box p{
+      color:#cbd5e1;
+      margin-bottom:35px;
+      font-size:18px;
+    }
+
+    .contact-wrapper{
+      display:grid;
+      grid-template-columns:0.9fr 1.1fr;
+      gap:40px;
+      align-items:start;
+    }
+
+    .contact-card,
+    .contact-form{
+      background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:28px;
+      padding:40px;
+      backdrop-filter:blur(14px);
+    }
+
+    .contact-card h2{
+      font-size:46px;
+      margin-bottom:20px;
+    }
+
+    .contact-card p{
+      color:#cbd5e1;
+      margin-bottom:20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select{
+      width:100%;
+      padding:16px;
+      border:none;
+      border-radius:14px;
+      background:rgba(15,23,42,0.9);
+      color:#fff;
+      margin-bottom:18px;
+      font-family:'Inter',sans-serif;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+
+    .contact-form textarea{
+      resize:none;
+      height:140px;
+    }
+
+    footer{
+      padding:35px 0;
+      border-top:1px solid rgba(255,255,255,0.08);
+      text-align:center;
+      color:#94a3b8;
+    }
+
+    .whatsapp{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      background:#25D366;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:32px;
+      z-index:999;
+      box-shadow:0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    @media(max-width:992px){
+
+      .hero-wrapper,
+      .grid-3,
+      .stats-grid,
+      .logo-grid,
+      .testimonial-grid,
+      .results-grid,
+      .contact-wrapper{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        text-align:center;
+      }
+
+      .hero-buttons,
+      .hero-proof{
+        justify-content:center;
+      }
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .section-title h2,
+      .offer-box h2,
+      .contact-card h2{
+        font-size:38px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .mobile-btn{
+        display:block;
+        color:#fff;
+        font-size:28px;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .section-title h2,
+      .offer-box h2,
+      .contact-card h2{
+        font-size:32px;
+      }
+
+      .card,
+      .stat-box,
+      .contact-card,
+      .contact-form,
+      .hero-card,
+      .testimonial-card,
+      .result-card{
+        padding:28px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-wrapper">
+
+    <div class="logo">Onkar Kulkarni</div>
+
+    <div class="nav-links">
+      <a href="#results">Results</a>
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="mobile-btn">☰</div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-wrapper">
+
+    <div>
+
+      <div class="tag">
+        🚀 Performance Marketing • CRM Automation • Lead Generation
+      </div>
+
+      <h1>
+        Generate More <span>Qualified Leads</span> Without Wasting Ad Budget
+      </h1>
+
+      <p>
+        Helping businesses scale using Google Ads, Meta Ads, CRM automation, conversion funnels, and data-driven lead generation systems designed for measurable revenue growth.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="https://calendly.com/onkar-kulkarni7257/new-meeting" target="_blank" class="btn btn-primary">
+          Book Free Strategy Call
+        </a>
+
+        <a href="#contact" class="btn btn-secondary">
+          Get Free Funnel Audit
+        </a>
+
+      </div>
+
+      <div class="hero-proof">
+        <div class="proof-chip">₹25L+ Monthly Budgets Managed</div>
+        <div class="proof-chip">10+ Years Experience</div>
+        <div class="proof-chip">50+ Brands Managed</div>
+        <div class="proof-chip">International Campaign Experience</div>
+      </div>
+
+    </div>
+
+    <div class="hero-card">
+
+      <h3>What You Can Expect</h3>
+
+      <ul class="hero-list">
+        <li>✔ Reduced CPL by up to 42%</li>
+        <li>✔ Generated 3,500+ qualified leads</li>
+        <li>✔ 5X ROAS achieved across campaigns</li>
+        <li>✔ CRM & WhatsApp automation workflows</li>
+        <li>✔ Multi-industry growth marketing expertise</li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary" style="width:100%;">
+        Request Growth Consultation
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats-grid">
+
+    <div class="stat-box">
+      <h2>10+</h2>
+      <p>Years Experience</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>₹25L+</h2>
+      <p>Monthly Budget Managed</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>50+</h2>
+      <p>Brands Managed</p>
+    </div>
+
+    <div class="stat-box">
+      <h2>5X</h2>
+      <p>ROAS Achieved</p>
+    </div>
+
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Trusted By Growing Brands</h2>
+      <p>
+        Experience working with healthcare, real estate, FMCG, SaaS, education, and B2B brands across domestic and international markets.
+      </p>
+    </div>
+
+    <div class="logo-grid">
+
+      <div class="logo-card">
+        <img src="rohan_ananta.png" alt="Rohan Builders">
+      </div>
+
+      <div class="logo-card">
+        <img src="indiprops_300_180.png" alt="IndiProps">
+      </div>
+
+      <div class="logo-card">
+        <img src="pandit-javdekar-logo.jpg" alt="Pandit Javdekar">
+      </div>
+
+      <div class="logo-card">
+        <img src="Paranjape-New-logo-01.png" alt="Paranjape">
+      </div>
+
+      <div class="logo-card">
+        <img src="Capture.PNG" alt="Sahyadri Labs">
+      </div>
+
+      <div class="logo-card">
+        <img src="NicePng_fedex-logo-png-transparent_802295.png" alt="Oddo Products">
+      </div>
+
+      <div class="logo-card">
+        <img src="MR.PNG" alt="Mothers Recipe">
+      </div>
+
+      <div class="logo-card">
+        <img src="logo.png" alt="Hill Retreat">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="results">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Results That Drive Revenue</h2>
+      <p>
+        Performance-focused campaigns and conversion systems designed to improve lead quality, reduce acquisition cost, and scale business growth.
+      </p>
+    </div>
+
+    <div class="results-grid">
+
+      <div class="result-card">
+        <div class="result-number">42%</div>
+        <h3>Lower Cost Per Lead</h3>
+        <p>
+          Optimized ad campaigns and landing page funnels helped businesses reduce CPL while improving lead quality.
+        </p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-number">3500+</div>
+        <h3>Qualified Leads Generated</h3>
+        <p>
+          High-converting campaigns across healthcare, education, real estate, and B2B sectors.
+        </p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-number">5X</div>
+        <h3>ROAS Achieved</h3>
+        <p>
+          Conversion-focused performance marketing strategies delivering scalable revenue growth.
+        </p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-number">₹25L+</div>
+        <h3>Monthly Budgets Managed</h3>
+        <p>
+          Experience handling multi-brand domestic and international campaigns with performance optimization.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Growth Marketing Services</h2>
+      <p>
+        End-to-end lead generation systems designed to help businesses scale efficiently.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>Google Ads</h3>
+        <p>
+          ROI-focused search, display, and performance campaigns optimized for qualified lead generation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Meta Ads</h3>
+        <p>
+          Facebook & Instagram campaigns designed for customer acquisition and funnel growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CRM Automation</h3>
+        <p>
+          HubSpot & Zoho CRM workflows with WhatsApp, email, and lead nurturing automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Lead Generation Funnels</h3>
+        <p>
+          High-converting landing pages and funnel systems designed for scalable growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Analytics & Tracking</h3>
+        <p>
+          GA4, Meta Pixel, GTM, dashboards, and conversion tracking for better marketing decisions.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Growth Consulting</h3>
+        <p>
+          Strategy consulting for businesses looking to scale revenue through digital growth systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="industries">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Industries Experience</h2>
+      <p>
+        Multi-industry digital marketing expertise across domestic and international brands.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card">
+        <h3>🏢 Real Estate</h3>
+        <p>
+          High-intent lead generation systems for builders, developers, and property brands.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏥 Healthcare</h3>
+        <p>
+          Patient lead generation campaigns using Google Ads, Meta Ads, and CRM automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💻 SaaS & IT</h3>
+        <p>
+          International demand generation campaigns and conversion-focused B2B funnels.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎓 Education</h3>
+        <p>
+          Student lead generation systems and conversion funnel optimization.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🛍 FMCG & D2C</h3>
+        <p>
+          Performance campaigns, retail growth marketing, and CRM-based customer retention.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🏭 Manufacturing & B2B</h3>
+        <p>
+          International lead generation campaigns and sales-focused CRM workflows.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Client Success Stories</h2>
+      <p>
+        Real business outcomes delivered through performance marketing and lead generation systems.
+      </p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <p>
+          Onkar helped us reduce CPL by 38% and significantly improved lead quality through optimized performance campaigns.
+        </p>
+
+        <div class="client-name">Rahul Sharma</div>
+        <div class="client-company">Rohan Builders</div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>
+          With proven lead generation systems, Onkar helped us sell our residential inventory within just one year.
+        </p>
+
+        <div class="client-name">Narayan Ner</div>
+        <div class="client-company">IndiProps Property Management Pune</div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>
+          With lead generation and conversion funnel systems, we increased our revenue growth by 21% YoY.
+        </p>
+
+        <div class="client-name">Amit Jha</div>
+        <div class="client-company">Oddo Products & IT Services Reseller</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="offer-section">
+  <div class="container">
+
+    <div class="offer-box">
+
+      <h2>Get a Free Funnel & Lead Generation Audit</h2>
+
+      <p>
+        Discover what’s limiting your lead quality, conversion rates, and marketing ROI. Get actionable recommendations to improve your growth systems.
+      </p>
+
+      <a href="#contact" class="btn btn-primary">
+        Request Free Audit
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact-wrapper">
+
+    <div class="contact-card">
+
+      <h2>Let’s Scale Your Business</h2>
+
+      <p>
+        Looking for a growth marketing consultant to improve lead quality, reduce CPL, and build scalable customer acquisition systems?
+      </p>
+
+      <p>
+        📧 onkar.kulkarni7257@gmail.com
+      </p>
+
+      <p>
+        📞 +91 8806964307
+      </p>
+
+      <div class="hero-buttons" style="margin-top:25px;">
+
+        <a href="https://calendly.com/onkar-kulkarni7257/new-meeting" target="_blank" class="btn btn-primary">
+          Schedule Strategy Call
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="contact-form">
+
+      <form action="https://formsubmit.co/onkar.kulkarni7257@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Lead From Landing Page">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting Onkar Kulkarni. I will get back to you shortly.">
+
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+        <input type="text" name="Name" placeholder="Your Name" required>
+
+        <input type="email" name="Email" placeholder="Your Email" required>
+
+        <input type="text" name="WhatsApp Number" placeholder="WhatsApp Number" required>
+
+        <input type="text" name="Business Name" placeholder="Business Name">
+
+        <input type="url" name="Website" placeholder="Business Website">
+
+        <select name="Service Interested In" required>
+          <option value="">Select Service</option>
+          <option>Google Ads</option>
+          <option>Meta Ads</option>
+          <option>CRM Automation</option>
+          <option>Lead Generation Funnels</option>
+          <option>Growth Consulting</option>
+        </select>
+
+        <select name="Monthly Marketing Budget" required>
+          <option value="">Monthly Marketing Budget</option>
+          <option>₹25K - ₹50K</option>
+          <option>₹50K - ₹1L</option>
+          <option>₹1L - ₹3L</option>
+          <option>₹3L+</option>
+        </select>
+
+        <textarea name="Project Details" placeholder="Tell me about your business goals"></textarea>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;border:none;cursor:pointer;">
+          Request Free Consultation
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 Onkar Kulkarni • Lead Generation & Growth Marketing Consultant
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918806964307?text=Hi%20Onkar,%20I%20want%20to%20discuss%20lead%20generation%20services%20for%20my%20business." target="_blank">
+  💬
+</a>
+
+</body>
+</html>
