@@ -586,6 +586,31 @@
 
   </style>
 </head>
+<script>
+
+function toggleMenu() {
+
+  const nav = document.querySelector('.nav-links');
+
+  if(nav.style.display === 'flex'){
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position = 'absolute';
+    nav.style.top = '90px';
+    nav.style.right = '20px';
+    nav.style.background = '#020617';
+    nav.style.padding = '20px';
+    nav.style.borderRadius = '16px';
+    nav.style.width = '220px';
+    nav.style.gap = '18px';
+    nav.style.border = '1px solid rgba(255,255,255,0.1)';
+  }
+
+}
+
+</script>
 <body>
 
 <nav>
@@ -601,7 +626,9 @@
       <a href="#contact">Contact</a>
     </div>
 
-    <div class="mobile-btn">☰</div>
+    <div class="mobile-btn" onclick="toggleMenu()">
+  ☰
+</div>
 
   </div>
 </nav>
